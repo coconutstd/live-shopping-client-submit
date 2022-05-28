@@ -1,5 +1,9 @@
-import { LiveEvent } from '../entities/live-event.entity';
+import { LiveEvent } from "../entities/live-event.entity"
 
 export interface LiveEventsResponse {
-  liveEvents: LiveEvent[];
+  liveEvents: LiveEvent[]
+}
+
+export interface LiveEventCreateResponse {
+  liveEvent: LiveEvent
 }

@@ -1,5 +1,9 @@
-import { Product } from '../entities/product.entity';
+import { Product } from "../entities/product.entity"
 
 export interface ProductsResponse {
-  products: Product[];
+  products: Product[]
+}
+
+export interface ProductResponse {
+  product: Product
 }
