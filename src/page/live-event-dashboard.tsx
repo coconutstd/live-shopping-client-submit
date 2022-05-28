@@ -1,12 +1,4 @@
-import {
-  AppProvider,
-  Heading,
-  Layout,
-  Page,
-  ResourceList,
-  TextStyle,
-  Thumbnail,
-} from "@shopify/polaris"
+import { Heading, Layout, Page } from "@shopify/polaris"
 import { useEffect, useState, useCallback } from "react"
 import { ScheduledEventCard } from "../component/scheduled-event-card"
 import {
@@ -19,7 +11,6 @@ import { LiveEvent, LiveStatus } from "../entities/live-event.entity"
 import { LiveEventCard } from "../component/live-event-card"
 import { FinishedEventCard } from "../component/finished-event-card"
 import { useHistory } from "react-router-dom"
-import { Product } from "../entities/product.entity"
 import {
   deleteLiveEvent,
   getLiveEvents,

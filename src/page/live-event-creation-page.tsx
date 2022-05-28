@@ -12,7 +12,7 @@ import {
   TextStyle,
   Thumbnail,
 } from "@shopify/polaris"
-import { useCallback, useEffect, useState } from "react"
+import { useCallback, useState } from "react"
 import { LiveStatus } from "../entities/live-event.entity"
 import { Product } from "../entities/product.entity"
 import { useHistory } from "react-router-dom"
