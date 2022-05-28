@@ -19,11 +19,12 @@ export const getProductsOfEvent = async (
   return await client.request(`/live-event/${eventId}/products`)
 }
 
-export const postLiveEvent = async (
-  eventId: string,
-  { title, status, productIds }: CreateLiveEventDto
-): Promise<LiveEventCreateResponse> => {
-  return await client.request(`/live-event/${eventId}`, {
+export const postLiveEvent = async ({
+  title,
+  status,
+  productIds,
+}: CreateLiveEventDto): Promise<LiveEventCreateResponse> => {
+  return await client.request("/live-event", {
     method: "POST",
     body: JSON.stringify({
       title,
